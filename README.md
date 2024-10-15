@@ -22,37 +22,36 @@ pip (Python package installer)
 Installation
 Clone the repository:
 
-bash
-Copy code
+
+
 git clone https://github.com/marktony/late-show.git
 cd late-show
 (Optional) Set up a virtual environment using pipenv:
 
-bash
 Copy code
 pipenv install
 pipenv shell
 Install required packages:
 
-bash
+
 Copy code
 pip install Flask Flask-SQLAlchemy Flask-Migrate
 Initialize the database:
 
-bash
+
 Copy code
 flask db init
 flask db migrate
 flask db upgrade
 Seed the database (if applicable):
 
-bash
+
 Copy code
 python seed.py
 Running the Application
 Start the Flask application:
 
-bash
+
 Copy code
 python app.py
 The server will run at http://127.0.0.1:5000/.
